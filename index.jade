@@ -1,0 +1,601 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='Dashboard')
+    meta(name='keyword', content='Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina')
+    title DASHGUM - FREE Bootstrap Admin Template
+    // Bootstrap core CSS
+    link(href='assets/css/bootstrap.css', rel='stylesheet')
+    // external css
+    link(href='assets/font-awesome/css/font-awesome.css', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='assets/css/zabuto_calendar.css')
+    link(rel='stylesheet', type='text/css', href='assets/js/gritter/css/jquery.gritter.css')
+    link(rel='stylesheet', type='text/css', href='assets/lineicons/style.css')
+    // Custom styles for this template
+    link(href='assets/css/style.css', rel='stylesheet')
+    link(href='assets/css/style-responsive.css', rel='stylesheet')
+    script(src='assets/js/chart-master/Chart.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    section#container
+      //
+        **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        ***********************************************************************************************************************************************************
+      // header start
+      header.header.black-bg
+        .sidebar-toggle-box
+          .fa.fa-bars.tooltips(data-placement='right', data-original-title='Toggle Navigation')
+        // logo start
+        a.logo(href='index.html')
+          b DASHGUM FREE
+        // logo end
+        #top_menu.nav.notify-row
+          // notification start
+          ul.nav.top-menu
+            // settings start
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='index.html#')
+                i.fa.fa-tasks
+                span.badge.bg-theme 4
+              ul.dropdown-menu.extended.tasks-bar
+                .notify-arrow.notify-arrow-green
+                li
+                  p.green You have 4 pending tasks
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc DashGum Admin Panel
+                      .percent 40%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                        span.sr-only 40% Complete (success)
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc Database Update
+                      .percent 60%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                        span.sr-only 60% Complete (warning)
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc Product Development
+                      .percent 80%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+                        span.sr-only 80% Complete
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc Payments Sent
+                      .percent 70%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='70', aria-valuemin='0', aria-valuemax='100', style='width: 70%')
+                        span.sr-only 70% Complete (Important)
+                li.external
+                  a(href='#') See All Tasks
+            // settings end
+            // inbox dropdown start
+            li#header_inbox_bar.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='index.html#')
+                i.fa.fa-envelope-o
+                span.badge.bg-theme 5
+              ul.dropdown-menu.extended.inbox
+                .notify-arrow.notify-arrow-green
+                li
+                  p.green You have 5 new messages
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-zac.jpg')
+                    span.subject
+                      span.from Zac Snider
+                      span.time Just now
+                    span.message
+                      | Hi mate, how is everything?
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-divya.jpg')
+                    span.subject
+                      span.from Divya Manian
+                      span.time 40 mins.
+                    span.message
+                      | Hi, I need your help with this.
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-danro.jpg')
+                    span.subject
+                      span.from Dan Rogers
+                      span.time 2 hrs.
+                    span.message
+                      | Love your new Dashboard.
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-sherman.jpg')
+                    span.subject
+                      span.from Dj Sherman
+                      span.time 4 hrs.
+                    span.message
+                      | Please, answer asap.
+                li
+                  a(href='index.html#') See all messages
+            // inbox dropdown end
+          // notification end
+        .top-menu
+          ul.nav.pull-right.top-menu
+            li
+              a.logout(href='login.html') Logout
+      // header end
+      //
+        **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        ***********************************************************************************************************************************************************
+      // sidebar start
+      aside
+        #sidebar.nav-collapse
+          // sidebar menu start
+          ul#nav-accordion.sidebar-menu
+            p.centered
+              a(href='profile.html')
+                img.img-circle(src='assets/img/ui-sam.jpg', width='60')
+            h5.centered Marcel Newman
+            li.mt
+              a.active(href='index.html')
+                i.fa.fa-dashboard
+                span Dashboard
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-desktop
+                span UI Elements
+              ul.sub
+                li
+                  a(href='general.html') General
+                li
+                  a(href='buttons.html') Buttons
+                li
+                  a(href='panels.html') Panels
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-cogs
+                span Components
+              ul.sub
+                li
+                  a(href='calendar.html') Calendar
+                li
+                  a(href='gallery.html') Gallery
+                li
+                  a(href='todo_list.html') Todo List
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-book
+                span Extra Pages
+              ul.sub
+                li
+                  a(href='blank.html') Blank Page
+                li
+                  a(href='login.html') Login
+                li
+                  a(href='lock_screen.html') Lock Screen
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-tasks
+                span Forms
+              ul.sub
+                li
+                  a(href='form_component.html') Form Components
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-th
+                span Data Tables
+              ul.sub
+                li
+                  a(href='basic_table.html') Basic Table
+                li
+                  a(href='responsive_table.html') Responsive Table
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-bar-chart-o
+                span Charts
+              ul.sub
+                li
+                  a(href='morris.html') Morris
+                li
+                  a(href='chartjs.html') Chartjs
+          // sidebar menu end
+      // sidebar end
+      //
+        **********************************************************************************************************************************************************
+        MAIN CONTENT
+        ***********************************************************************************************************************************************************
+      // main content start
+      section#main-content
+        section.wrapper
+          .row
+            .col-lg-9.main-chart
+              .row.mtbox
+                .col-md-2.col-sm-2.col-md-offset-1.box0
+                  .box1
+                    span.li_heart
+                    h3 933
+                  p 933 People liked your page the last 24hs. Whoohoo!
+                .col-md-2.col-sm-2.box0
+                  .box1
+                    span.li_cloud
+                    h3 +48
+                  p 48 New files were added in your cloud storage.
+                .col-md-2.col-sm-2.box0
+                  .box1
+                    span.li_stack
+                    h3 23
+                  p You have 23 unread messages in your inbox.
+                .col-md-2.col-sm-2.box0
+                  .box1
+                    span.li_news
+                    h3 +10
+                  p More than 10 news were added in your reader.
+                .col-md-2.col-sm-2.box0
+                  .box1
+                    span.li_data
+                    h3 OK!
+                  p Your server is working perfectly. Relax &amp; enjoy.
+              // /row mt
+              .row.mt
+                // SERVER STATUS PANELS
+                .col-md-4.col-sm-4.mb
+                  .white-panel.pn.donut-chart
+                    .white-header
+                      h5 SERVER LOAD
+                    .row
+                      .col-sm-6.col-xs-6.goleft
+                        p
+                          i.fa.fa-database
+                          |  70%
+                    canvas#serverstatus01(height='120', width='120')
+                    script.
+                      var doughnutData = [
+                      {
+                      value: 70,
+                      color:"#68dff0"
+                      },
+                      {
+                      value : 30,
+                      color : "#fdfdfd"
+                      }
+                      ];
+                      var myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData);
+                // /col-md-4
+                .col-md-4.col-sm-4.mb
+                  .white-panel.pn
+                    .white-header
+                      h5 TOP PRODUCT
+                    .row
+                      .col-sm-6.col-xs-6.goleft
+                        p
+                          i.fa.fa-heart
+                          |  122
+                      .col-sm-6.col-xs-6
+                    .centered
+                      img(src='assets/img/product.png', width='120')
+                // /col-md-4
+                .col-md-4.mb
+                  // WHITE PANEL - TOP USER
+                  .white-panel.pn
+                    .white-header
+                      h5 TOP USER
+                    p
+                      img.img-circle(src='assets/img/ui-zac.jpg', width='80')
+                    p
+                      b Zac Snider
+                    .row
+                      .col-md-6
+                        p.small.mt MEMBER SINCE
+                        p 2012
+                      .col-md-6
+                        p.small.mt TOTAL SPEND
+                        p $ 47,60
+                // /col-md-4
+              // /row
+              .row
+                // TWITTER PANEL
+                .col-md-4.mb
+                  .darkblue-panel.pn
+                    .darkblue-header
+                      h5 DROPBOX STATICS
+                    canvas#serverstatus02(height='120', width='120')
+                    script.
+                      var doughnutData = [
+                      {
+                      value: 60,
+                      color:"#68dff0"
+                      },
+                      {
+                      value : 40,
+                      color : "#444c57"
+                      }
+                      ];
+                      var myDoughnut = new Chart(document.getElementById("serverstatus02").getContext("2d")).Doughnut(doughnutData);
+                    p April 17, 2014
+                    footer
+                      .pull-left
+                        h5
+                          i.fa.fa-hdd-o
+                          |  17 GB
+                      .pull-right
+                        h5 60% Used
+                // /col-md-4
+                .col-md-4.mb
+                  // INSTAGRAM PANEL
+                  .instagram-panel.pn
+                    i.fa.fa-instagram.fa-4x
+                    p
+                      | @THISISYOU
+                      br
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;5 min. ago
+                    p
+                      i.fa.fa-comment
+                      |  18 | 
+                      i.fa.fa-heart
+                      |  49
+                // /col-md-4
+                .col-md-4.col-sm-4.mb
+                  // REVENUE PANEL
+                  .darkblue-panel.pn
+                    .darkblue-header
+                      h5 REVENUE
+                    .chart.mt
+                      .sparkline(data-type='line', data-resize='true', data-height='75', data-width='90%', data-line-width='1', data-line-color='#fff', data-spot-color='#fff', data-fill-color='', data-highlight-line-color='#fff', data-spot-radius='4', data-data='[200,135,667,333,526,996,564,123,890,464,655]')
+                    p.mt
+                      b $ 17,980
+                      br
+                      | Month Income
+                // /col-md-4
+              // /row
+              .row.mt
+                // CUSTOM CHART START
+                .border-head
+                  h3 VISITS
+                .custom-bar-chart
+                  ul.y-axis
+                    li
+                      span 10.000
+                    li
+                      span 8.000
+                    li
+                      span 6.000
+                    li
+                      span 4.000
+                    li
+                      span 2.000
+                    li
+                      span 0
+                  .bar
+                    .title JAN
+                    .value.tooltips(data-original-title='8.500', data-toggle='tooltip', data-placement='top') 85%
+                  .bar
+                    .title FEB
+                    .value.tooltips(data-original-title='5.000', data-toggle='tooltip', data-placement='top') 50%
+                  .bar
+                    .title MAR
+                    .value.tooltips(data-original-title='6.000', data-toggle='tooltip', data-placement='top') 60%
+                  .bar
+                    .title APR
+                    .value.tooltips(data-original-title='4.500', data-toggle='tooltip', data-placement='top') 45%
+                  .bar
+                    .title MAY
+                    .value.tooltips(data-original-title='3.200', data-toggle='tooltip', data-placement='top') 32%
+                  .bar
+                    .title JUN
+                    .value.tooltips(data-original-title='6.200', data-toggle='tooltip', data-placement='top') 62%
+                  .bar
+                    .title JUL
+                    .value.tooltips(data-original-title='7.500', data-toggle='tooltip', data-placement='top') 75%
+                // custom chart end
+              // /row
+            // /col-lg-9 END SECTION MIDDLE
+            //
+              **********************************************************************************************************************************************************
+              RIGHT SIDEBAR CONTENT
+              ***********************************************************************************************************************************************************
+            .col-lg-3.ds
+              // COMPLETED ACTIONS DONUTS CHART
+              h3 NOTIFICATIONS
+              // First Action
+              .desc
+                .thumb
+                  span.badge.bg-theme
+                    i.fa.fa-clock-o
+                .details
+                  p
+                    muted 2 Minutes Ago
+                    br
+                    a(href='#') James Brown
+                    |  subscribed to your newsletter.
+                    br
+              // Second Action
+              .desc
+                .thumb
+                  span.badge.bg-theme
+                    i.fa.fa-clock-o
+                .details
+                  p
+                    muted 3 Hours Ago
+                    br
+                    a(href='#') Diana Kennedy
+                    |  purchased a year subscription.
+                    br
+              // Third Action
+              .desc
+                .thumb
+                  span.badge.bg-theme
+                    i.fa.fa-clock-o
+                .details
+                  p
+                    muted 7 Hours Ago
+                    br
+                    a(href='#') Brandon Page
+                    |  purchased a year subscription.
+                    br
+              // Fourth Action
+              .desc
+                .thumb
+                  span.badge.bg-theme
+                    i.fa.fa-clock-o
+                .details
+                  p
+                    muted 11 Hours Ago
+                    br
+                    a(href='#') Mark Twain
+                    |  commented your post.
+                    br
+              // Fifth Action
+              .desc
+                .thumb
+                  span.badge.bg-theme
+                    i.fa.fa-clock-o
+                .details
+                  p
+                    muted 18 Hours Ago
+                    br
+                    a(href='#') Daniel Pratt
+                    |  purchased a wallet in your store.
+                    br
+              // USERS ONLINE SECTION
+              h3 TEAM MEMBERS
+              // First Member
+              .desc
+                .thumb
+                  img.img-circle(src='assets/img/ui-divya.jpg', width='35px', height='35px', align='')
+                .details
+                  p
+                    a(href='#') DIVYA MANIAN
+                    br
+                    muted Available
+              // Second Member
+              .desc
+                .thumb
+                  img.img-circle(src='assets/img/ui-sherman.jpg', width='35px', height='35px', align='')
+                .details
+                  p
+                    a(href='#') DJ SHERMAN
+                    br
+                    muted I am Busy
+              // Third Member
+              .desc
+                .thumb
+                  img.img-circle(src='assets/img/ui-danro.jpg', width='35px', height='35px', align='')
+                .details
+                  p
+                    a(href='#') DAN ROGERS
+                    br
+                    muted Available
+              // Fourth Member
+              .desc
+                .thumb
+                  img.img-circle(src='assets/img/ui-zac.jpg', width='35px', height='35px', align='')
+                .details
+                  p
+                    a(href='#') Zac Sniders
+                    br
+                    muted Available
+              // Fifth Member
+              .desc
+                .thumb
+                  img.img-circle(src='assets/img/ui-sam.jpg', width='35px', height='35px', align='')
+                .details
+                  p
+                    a(href='#') Marcel Newman
+                    br
+                    muted Available
+              // CALENDAR
+              #calendar.mb
+                .panel.green-panel.no-margin
+                  .panel-body
+                    #date-popover.popover.top(style='cursor: pointer; disadding: block; margin-left: 33%; margin-top: -50px; width: 175px;')
+                      .arrow
+                      h3.popover-title(style='disadding: none;')
+                      #date-popover-content.popover-content
+                    #my-calendar
+              // / calendar
+            // /col-lg-3
+      // main content end
+      // footer start
+      footer.site-footer
+        .text-center
+          | 2014 - Alvarez.is
+          a.go-top(href='index.html#')
+            i.fa.fa-angle-up
+      // footer end
+    // js placed at the end of the document so the pages load faster
+    script(src='assets/js/jquery.js')
+    script(src='assets/js/jquery-1.8.3.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    script.include(type='text/javascript', src='assets/js/jquery.dcjqaccordion.2.7.js')
+    script(src='assets/js/jquery.scrollTo.min.js')
+    script(src='assets/js/jquery.nicescroll.js', type='text/javascript')
+    script(src='assets/js/jquery.sparkline.js')
+    // common script for all pages
+    script(src='assets/js/common-scripts.js')
+    script(type='text/javascript', src='assets/js/gritter/js/jquery.gritter.js')
+    script(type='text/javascript', src='assets/js/gritter-conf.js')
+    // script for this page
+    script(src='assets/js/sparkline-chart.js')
+    script(src='assets/js/zabuto_calendar.js')
+    script(type='text/javascript').
+      $(document).ready(function () {
+      var unique_id = $.gritter.add({
+      // (string | mandatory) the heading of the notification
+      title: 'Welcome to Dashgum!',
+      // (string | mandatory) the text inside the notification
+      text: 'Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo. Free version for <a href="http://blacktie.co" target="_blank" style="color:#ffd777">BlackTie.co</a>.',
+      // (string | optional) the image to display on the left
+      image: 'assets/img/ui-sam.jpg',
+      // (bool | optional) if you want it to fade out on its own or just sit there
+      sticky: true,
+      // (int | optional) the time you want it to be alive for before fading out
+      time: '',
+      // (string | optional) the class name you want to apply to that specific message
+      class_name: 'my-sticky-class'
+      });
+      return false;
+      });
+    script(type='application/javascript').
+      $(document).ready(function () {
+      $("#date-popover").popover({html: true, trigger: "manual"});
+      $("#date-popover").hide();
+      $("#date-popover").click(function (e) {
+      $(this).hide();
+      });
+      $("#my-calendar").zabuto_calendar({
+      action: function () {
+      return myDateFunction(this.id, false);
+      },
+      action_nav: function () {
+      return myNavFunction(this.id);
+      },
+      ajax: {
+      url: "show_data.php?action=1",
+      modal: true
+      },
+      legend: [
+      {type: "text", label: "Special event", badge: "00"},
+      {type: "block", label: "Regular event", }
+      ]
+      });
+      });
+      function myNavFunction(id) {
+      $("#date-popover").hide();
+      var nav = $("#" + id).data("navigation");
+      var to = $("#" + id).data("to");
+      console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+      }

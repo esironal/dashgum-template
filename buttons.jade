@@ -1,0 +1,416 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='Dashboard')
+    meta(name='keyword', content='Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina')
+    title DASHGUM - Bootstrap Admin Template
+    // Bootstrap core CSS
+    link(href='assets/css/bootstrap.css', rel='stylesheet')
+    // external css
+    link(href='assets/font-awesome/css/font-awesome.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='assets/css/style.css', rel='stylesheet')
+    link(href='assets/css/style-responsive.css', rel='stylesheet')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    section#container
+      //
+        **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        ***********************************************************************************************************************************************************
+      // header start
+      header.header.black-bg
+        .sidebar-toggle-box
+          .fa.fa-bars.tooltips(data-placement='right', data-original-title='Toggle Navigation')
+        // logo start
+        a.logo(href='index.html')
+          b DASHGUM FREE
+        // logo end
+        #top_menu.nav.notify-row
+          // notification start
+          ul.nav.top-menu
+            // settings start
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='index.html#')
+                i.fa.fa-tasks
+                span.badge.bg-theme 4
+              ul.dropdown-menu.extended.tasks-bar
+                .notify-arrow.notify-arrow-green
+                li
+                  p.green You have 4 pending tasks
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc DashGum Admin Panel
+                      .percent 40%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                        span.sr-only 40% Complete (success)
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc Database Update
+                      .percent 60%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                        span.sr-only 60% Complete (warning)
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc Product Development
+                      .percent 80%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+                        span.sr-only 80% Complete
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc Payments Sent
+                      .percent 70%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='70', aria-valuemin='0', aria-valuemax='100', style='width: 70%')
+                        span.sr-only 70% Complete (Important)
+                li.external
+                  a(href='#') See All Tasks
+            // settings end
+            // inbox dropdown start
+            li#header_inbox_bar.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='index.html#')
+                i.fa.fa-envelope-o
+                span.badge.bg-theme 5
+              ul.dropdown-menu.extended.inbox
+                .notify-arrow.notify-arrow-green
+                li
+                  p.green You have 5 new messages
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-zac.jpg')
+                    span.subject
+                      span.from Zac Snider
+                      span.time Just now
+                    span.message
+                      | Hi mate, how is everything?
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-divya.jpg')
+                    span.subject
+                      span.from Divya Manian
+                      span.time 40 mins.
+                    span.message
+                      | Hi, I need your help with this.
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-danro.jpg')
+                    span.subject
+                      span.from Dan Rogers
+                      span.time 2 hrs.
+                    span.message
+                      | Love your new Dashboard.
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-sherman.jpg')
+                    span.subject
+                      span.from Dj Sherman
+                      span.time 4 hrs.
+                    span.message
+                      | Please, answer asap.
+                li
+                  a(href='index.html#') See all messages
+            // inbox dropdown end
+          // notification end
+        .top-menu
+          ul.nav.pull-right.top-menu
+            li
+              a.logout(href='login.html') Logout
+      // header end
+      //
+        **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        ***********************************************************************************************************************************************************
+      // sidebar start
+      aside
+        #sidebar.nav-collapse
+          // sidebar menu start
+          ul#nav-accordion.sidebar-menu
+            p.centered
+              a(href='profile.html')
+                img.img-circle(src='assets/img/ui-sam.jpg', width='60')
+            h5.centered Marcel Newman
+            li.mt
+              a(href='index.html')
+                i.fa.fa-dashboard
+                span Dashboard
+            li.sub-menu
+              a.active(href='javascript:;')
+                i.fa.fa-desktop
+                span UI Elements
+              ul.sub
+                li
+                  a(href='general.html') General
+                li.active
+                  a(href='buttons.html') Buttons
+                li
+                  a(href='panels.html') Panels
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-cogs
+                span Components
+              ul.sub
+                li
+                  a(href='calendar.html') Calendar
+                li
+                  a(href='gallery.html') Gallery
+                li
+                  a(href='todo_list.html') Todo List
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-book
+                span Extra Pages
+              ul.sub
+                li
+                  a(href='blank.html') Blank Page
+                li
+                  a(href='login.html') Login
+                li
+                  a(href='lock_screen.html') Lock Screen
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-tasks
+                span Forms
+              ul.sub
+                li
+                  a(href='form_component.html') Form Components
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-th
+                span Data Tables
+              ul.sub
+                li
+                  a(href='basic_table.html') Basic Table
+                li
+                  a(href='responsive_table.html') Responsive Table
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-bar-chart-o
+                span Charts
+              ul.sub
+                li
+                  a(href='morris.html') Morris
+                li
+                  a(href='chartjs.html') Chartjs
+          // sidebar menu end
+      // sidebar end
+      //
+        **********************************************************************************************************************************************************
+        MAIN CONTENT
+        ***********************************************************************************************************************************************************
+      // main content start
+      section#main-content
+        section.wrapper
+          .row.mt
+            .col-lg-6.col-md-6.col-sm-12
+              .showback
+                h4
+                  i.fa.fa-angle-right
+                  |  Basic Buttons
+                button.btn.btn-default(type='button') Default
+                button.btn.btn-primary(type='button') Primary
+                button.btn.btn-success(type='button') Success
+                button.btn.btn-info(type='button') Info
+                button.btn.btn-warning(type='button') Warning
+                button.btn.btn-danger(type='button') Danger
+              // /showback
+              .showback
+                h4
+                  i.fa.fa-angle-right
+                  |  Buttons Round
+                button.btn.btn-round.btn-default(type='button') Default
+                button.btn.btn-round.btn-primary(type='button') Primary
+                button.btn.btn-round.btn-success(type='button') Success
+                button.btn.btn-round.btn-info(type='button') Info
+                button.btn.btn-round.btn-warning(type='button') Warning
+                button.btn.btn-round.btn-danger(type='button') Danger
+              // /showback
+              .showback
+                h4
+                  i.fa.fa-angle-right
+                  |  Theme Buttons
+                // Standard button
+                button.btn.btn-theme(type='button') Theme
+                button.btn.btn-theme02(type='button') Theme 02
+                button.btn.btn-theme03(type='button') Theme 03
+                button.btn.btn-theme04(type='button') Theme 04
+              // /showback
+              .showback
+                h4
+                  i.fa.fa-angle-right
+                  |  Buttons Group
+                .btn-group
+                  button.btn.btn-default(type='button') Left
+                  button.btn.btn-default(type='button') Middle
+                  button.btn.btn-default(type='button') Right
+              // /showback
+              .showback
+                h4
+                  i.fa.fa-angle-right
+                  |  Button Nesting
+                .btn-group
+                  button.btn.btn-default(type='button') 1
+                  button.btn.btn-default(type='button') 2
+                  .btn-group
+                    button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                      | Dropdown
+                      span.caret
+                    ul.dropdown-menu
+                      li
+                        a(href='#') Dropdown link
+                      li
+                        a(href='#') Dropdown link
+              // /showback
+              .showback
+                h4
+                  i.fa.fa-angle-right
+                  |  Split Buttons
+                // Split button
+                .btn-group
+                  button.btn.btn-theme03(type='button') Action
+                  button.btn.btn-theme03.dropdown-toggle(type='button', data-toggle='dropdown')
+                    span.caret
+                    span.sr-only Toggle Dropdown
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another action
+                    li
+                      a(href='#') Something else here
+                    li.divider
+                    li
+                      a(href='#') Separated link
+              // /showback
+            .col-lg-6.col-md-6.col-sm-12
+              .showback
+                h4
+                  i.fa.fa-angle-right
+                  |  Buttons Sizes
+                p
+                  button.btn.btn-primary.btn-lg(type='button') Large button
+                  button.btn.btn-default.btn-lg(type='button') Large button
+                p
+                  button.btn.btn-primary(type='button') Default button
+                  button.btn.btn-default(type='button') Default button
+                p
+                  button.btn.btn-primary.btn-sm(type='button') Small button
+                  button.btn.btn-default.btn-sm(type='button') Small button
+                p
+                  button.btn.btn-primary.btn-xs(type='button') Extra small button
+                  button.btn.btn-default.btn-xs(type='button') Extra small button
+              // /showback
+              // BUTTON BLOCK
+              .showback
+                h4
+                  i.fa.fa-angle-right
+                  |  Block Buttons
+                button.btn.btn-primary.btn-lg.btn-block(type='button') Block level button
+                button.btn.btn-default.btn-lg.btn-block(type='button') Block level button
+              // /showback
+              // JUSTIFIED BUTTONS
+              .showback
+                h4
+                  i.fa.fa-angle-right
+                  |  Justified Buttons
+                .btn-group.btn-group-justified
+                  .btn-group
+                    button.btn.btn-theme(type='button') Left
+                  .btn-group
+                    button.btn.btn-theme(type='button') Middle
+                  .btn-group
+                    button.btn.btn-theme(type='button') Right
+              // /showback
+              // DROPDOWN BUTTONS
+              .showback
+                h4
+                  i.fa.fa-angle-right
+                  |  Dropdown Buttons
+                // Single button
+                .btn-group
+                  button.btn.btn-theme.dropdown-toggle(type='button', data-toggle='dropdown')
+                    | Action 
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another action
+                    li
+                      a(href='#') Something else here
+                    li.divider
+                    li
+                      a(href='#') Separated link
+                // Single button
+                .btn-group
+                  button.btn.btn-theme04.dropdown-toggle(type='button', data-toggle='dropdown')
+                    | Action 
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another action
+                    li
+                      a(href='#') Something else here
+                    li.divider
+                    li
+                      a(href='#') Separated link
+              // /showback
+              // BUTTONS WITH ICONS
+              .showback
+                h4
+                  i.fa.fa-angle-right
+                  |  Buttons With Icons
+                button.btn.btn-theme(type='button')
+                  i.fa.fa-cog
+                  |  Button
+                button.btn.btn-theme02(type='button')
+                  i.fa.fa-check
+                  |  Button
+                button.btn.btn-theme04(type='button')
+                  i.fa.fa-heart
+                  |  Button
+              // /showback
+            // /col-lg-6
+          // / row
+      // /MAIN CONTENT
+      // main content end
+      // footer start
+      footer.site-footer
+        .text-center
+          | 2014 - Alvarez.is
+          a.go-top(href='buttons.html#')
+            i.fa.fa-angle-up
+      // footer end
+    // js placed at the end of the document so the pages load faster
+    script(src='assets/js/jquery.js')
+    script(src='assets/js/jjquery-1.8.3.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    script.include(type='text/javascript', src='assets/js/jquery.dcjqaccordion.2.7.js')
+    script(src='assets/js/jquery.scrollTo.min.js')
+    script(src='assets/js/jquery.nicescroll.js', type='text/javascript')
+    // common script for all pages
+    script(src='assets/js/common-scripts.js')
+    // script for this page
+    script.
+      //custom select box
+      $(function(){
+      $('select.styled').customSelect();
+      });

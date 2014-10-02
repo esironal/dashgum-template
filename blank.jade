@@ -1,0 +1,250 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='Dashboard')
+    meta(name='keyword', content='Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina')
+    title DASHGUM - Bootstrap Admin Template
+    // Bootstrap core CSS
+    link(href='assets/css/bootstrap.css', rel='stylesheet')
+    // external css
+    link(href='assets/font-awesome/css/font-awesome.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='assets/css/style.css', rel='stylesheet')
+    link(href='assets/css/style-responsive.css', rel='stylesheet')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    section#container
+      //
+        **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        ***********************************************************************************************************************************************************
+      // header start
+      header.header.black-bg
+        .sidebar-toggle-box
+          .fa.fa-bars.tooltips(data-placement='right', data-original-title='Toggle Navigation')
+        // logo start
+        a.logo(href='index.html')
+          b DASHGUM FREE
+        // logo end
+        #top_menu.nav.notify-row
+          // notification start
+          ul.nav.top-menu
+            // settings start
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='index.html#')
+                i.fa.fa-tasks
+                span.badge.bg-theme 4
+              ul.dropdown-menu.extended.tasks-bar
+                .notify-arrow.notify-arrow-green
+                li
+                  p.green You have 4 pending tasks
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc DashGum Admin Panel
+                      .percent 40%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                        span.sr-only 40% Complete (success)
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc Database Update
+                      .percent 60%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                        span.sr-only 60% Complete (warning)
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc Product Development
+                      .percent 80%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+                        span.sr-only 80% Complete
+                li
+                  a(href='index.html#')
+                    .task-info
+                      .desc Payments Sent
+                      .percent 70%
+                    .progress.progress-striped
+                      .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='70', aria-valuemin='0', aria-valuemax='100', style='width: 70%')
+                        span.sr-only 70% Complete (Important)
+                li.external
+                  a(href='#') See All Tasks
+            // settings end
+            // inbox dropdown start
+            li#header_inbox_bar.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='index.html#')
+                i.fa.fa-envelope-o
+                span.badge.bg-theme 5
+              ul.dropdown-menu.extended.inbox
+                .notify-arrow.notify-arrow-green
+                li
+                  p.green You have 5 new messages
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-zac.jpg')
+                    span.subject
+                      span.from Zac Snider
+                      span.time Just now
+                    span.message
+                      | Hi mate, how is everything?
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-divya.jpg')
+                    span.subject
+                      span.from Divya Manian
+                      span.time 40 mins.
+                    span.message
+                      | Hi, I need your help with this.
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-danro.jpg')
+                    span.subject
+                      span.from Dan Rogers
+                      span.time 2 hrs.
+                    span.message
+                      | Love your new Dashboard.
+                li
+                  a(href='index.html#')
+                    span.photo
+                      img(alt='avatar', src='assets/img/ui-sherman.jpg')
+                    span.subject
+                      span.from Dj Sherman
+                      span.time 4 hrs.
+                    span.message
+                      | Please, answer asap.
+                li
+                  a(href='index.html#') See all messages
+            // inbox dropdown end
+          // notification end
+        .top-menu
+          ul.nav.pull-right.top-menu
+            li
+              a.logout(href='login.html') Logout
+      // header end
+      //
+        **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        ***********************************************************************************************************************************************************
+      // sidebar start
+      aside
+        #sidebar.nav-collapse
+          // sidebar menu start
+          ul#nav-accordion.sidebar-menu
+            p.centered
+              a(href='profile.html')
+                img.img-circle(src='assets/img/ui-sam.jpg', width='60')
+            h5.centered Marcel Newman
+            li.mt
+              a(href='index.html')
+                i.fa.fa-dashboard
+                span Dashboard
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-desktop
+                span UI Elements
+              ul.sub
+                li
+                  a(href='general.html') General
+                li
+                  a(href='buttons.html') Buttons
+                li
+                  a(href='panels.html') Panels
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-cogs
+                span Components
+              ul.sub
+                li
+                  a(href='calendar.html') Calendar
+                li
+                  a(href='gallery.html') Gallery
+                li
+                  a(href='todo_list.html') Todo List
+            li.sub-menu
+              a.active(href='javascript:;')
+                i.fa.fa-book
+                span Extra Pages
+              ul.sub
+                li.active
+                  a(href='blank.html') Blank Page
+                li
+                  a(href='login.html') Login
+                li
+                  a(href='lock_screen.html') Lock Screen
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-tasks
+                span Forms
+              ul.sub
+                li
+                  a(href='form_component.html') Form Components
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-th
+                span Data Tables
+              ul.sub
+                li
+                  a(href='basic_table.html') Basic Table
+                li
+                  a(href='responsive_table.html') Responsive Table
+            li.sub-menu
+              a(href='javascript:;')
+                i.fa.fa-bar-chart-o
+                span Charts
+              ul.sub
+                li
+                  a(href='morris.html') Morris
+                li
+                  a(href='chartjs.html') Chartjs
+          // sidebar menu end
+      // sidebar end
+      //
+        **********************************************************************************************************************************************************
+        MAIN CONTENT
+        ***********************************************************************************************************************************************************
+      // main content start
+      section#main-content
+        section.wrapper.site-min-height
+          h3
+            i.fa.fa-angle-right
+            |  Blank Page
+          .row.mt
+            .col-lg-12
+              p Place your content here.
+      // /MAIN CONTENT
+      // main content end
+      // footer start
+      footer.site-footer
+        .text-center
+          | 2014 - Alvarez.is
+          a.go-top(href='blank.html#')
+            i.fa.fa-angle-up
+      // footer end
+    // js placed at the end of the document so the pages load faster
+    script(src='assets/js/jquery.js')
+    script(src='assets/js/bootstrap.min.js')
+    script(src='assets/js/jquery-ui-1.9.2.custom.min.js')
+    script(src='assets/js/jquery.ui.touch-punch.min.js')
+    script.include(type='text/javascript', src='assets/js/jquery.dcjqaccordion.2.7.js')
+    script(src='assets/js/jquery.scrollTo.min.js')
+    script(src='assets/js/jquery.nicescroll.js', type='text/javascript')
+    // common script for all pages
+    script(src='assets/js/common-scripts.js')
+    // script for this page
+    script.
+      //custom select box
+      $(function(){
+      $('select.styled').customSelect();
+      });

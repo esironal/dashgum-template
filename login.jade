@@ -1,0 +1,75 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='Dashboard')
+    meta(name='keyword', content='Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina')
+    title DASHGUM - Bootstrap Admin Template
+    // Bootstrap core CSS
+    link(href='assets/css/bootstrap.css', rel='stylesheet')
+    // external css
+    link(href='assets/font-awesome/css/font-awesome.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='assets/css/style.css', rel='stylesheet')
+    link(href='assets/css/style-responsive.css', rel='stylesheet')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    //
+      **********************************************************************************************************************************************************
+      MAIN CONTENT
+      ***********************************************************************************************************************************************************
+    #login-page
+      .container
+        form.form-login(action='index.html')
+          h2.form-login-heading sign in now
+          .login-wrap
+            input.form-control(type='text', placeholder='User ID', autofocus='')
+            br
+            input.form-control(type='password', placeholder='Password')
+            label.checkbox
+              span.pull-right
+                a(data-toggle='modal', href='login.html#myModal')  Forgot Password?
+            button.btn.btn-theme.btn-block(href='index.html', type='submit')
+              i.fa.fa-lock
+              |  SIGN IN
+            hr
+            .login-social-link.centered
+              p or you can sign in via your social network
+              button.btn.btn-facebook(type='submit')
+                i.fa.fa-facebook
+                |  Facebook
+              button.btn.btn-twitter(type='submit')
+                i.fa.fa-twitter
+                |  Twitter
+            .registration
+              | Don&apos;t have an account yet?
+              br
+              a(href='#')
+                | Create an account
+          // Modal
+          #myModal.modal.fade(aria-hidden='true', aria-labelledby='myModalLabel', role='dialog', tabindex='-1')
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+                  h4.modal-title Forgot Password ?
+                .modal-body
+                  p Enter your e-mail address below to reset your password.
+                  input.form-control.placeholder-no-fix(type='text', name='email', placeholder='Email', autocomplete='off')
+                .modal-footer
+                  button.btn.btn-default(data-dismiss='modal', type='button') Cancel
+                  button.btn.btn-theme(type='button') Submit
+          // modal
+    // js placed at the end of the document so the pages load faster
+    script(src='assets/js/jquery.js')
+    script(src='assets/js/bootstrap.min.js')
+    // BACKSTRETCH
+    // You can use an image of whatever size. This script will stretch to fit in any screen size.
+    script(type='text/javascript', src='assets/js/jquery.backstretch.min.js')
+    script.
+      $.backstretch("assets/img/login-bg.jpg", {speed: 500});
