@@ -1,4 +1,4 @@
-DashGum Template
+DashGum Template (free version)
 ===============
 
 [DashGum – Free Dashboard] (http://www.blacktie.co/2014/07/dashgum-free-dashboard/)
