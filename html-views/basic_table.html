@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
-    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
         
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -196,7 +196,11 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-              	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+              	  <p class="centered">
+			  <a href="profile.html">
+			  	<img src="assets/img/ui-sam.jpg" class="img-circle" width="60" alt="Profile">
+			  </a>
+		  </p>
               	  <h5 class="centered">Marcel Newman</h5>
               	  	
                   <li class="mt">
@@ -224,9 +228,9 @@
                           <span>Components</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="calendar.html">Calendar</a></li>
-                          <li><a  href="gallery.html">Gallery</a></li>
-                          <li><a  href="todo_list.html">Todo List</a></li>
+                          <li><a href="calendar.html">Calendar</a></li>
+                          <li><a href="gallery.html">Gallery</a></li>
+                          <li><a href="todo_list.html">Todo List</a></li>
                       </ul>
                   </li>
                   <li class="sub-menu">
@@ -235,9 +239,9 @@
                           <span>Extra Pages</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="blank.html">Blank Page</a></li>
-                          <li><a  href="login.html">Login</a></li>
-                          <li><a  href="lock_screen.html">Lock Screen</a></li>
+                          <li><a href="blank.html">Blank Page</a></li>
+                          <li><a href="login.html">Login</a></li>
+                          <li><a href="lock_screen.html">Lock Screen</a></li>
                       </ul>
                   </li>
                   <li class="sub-menu">
@@ -265,8 +269,8 @@
                           <span>Charts</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="morris.html">Morris</a></li>
-                          <li><a  href="chartjs.html">Chartjs</a></li>
+                          <li><a href="morris.html">Morris</a></li>
+                          <li><a href="chartjs.html">Chartjs</a></li>
                       </ul>
                   </li>
 
@@ -356,7 +360,7 @@
 	                              </tr>
 	                              </tbody>
 	                          </table>
-	                  	  </div><! --/content-panel -->
+	                  	  </div><!--/content-panel -->
 	                  </div><!-- /col-md-12 -->
 				</div><!-- row -->
 
@@ -369,7 +373,7 @@
                               <thead>
                               <tr>
                                   <th><i class="fa fa-bullhorn"></i> Company</th>
-                                  <th class="hidden-phone"><i class="fa fa-question-circle"></i> Descrition</th>
+                                  <th class="hidden-phone"><i class="fa fa-question-circle"></i> Description</th>
                                   <th><i class="fa fa-bookmark"></i> Profit</th>
                                   <th><i class=" fa fa-edit"></i> Status</th>
                                   <th></th>
@@ -399,7 +403,7 @@
                                   <td>
                                       <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
                                       <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
                                   </td>
                               </tr>
                               <tr>
@@ -414,7 +418,7 @@
                                   <td>
                                       <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
                                       <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
                                   </td>
                               </tr>
                               <tr>
@@ -449,7 +453,7 @@
                   </div><!-- /col-md-12 -->
               </div><!-- /row -->
 
-		</section><! --/wrapper -->
+		</section><!--/wrapper -->
       </section><!-- /MAIN CONTENT -->
 
       <!--main content end-->
@@ -468,10 +472,9 @@
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
-    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-
+    <script src="assets/js/jquery.nicescroll.js"></script>
 
     <!--common script for all pages-->
     <script src="assets/js/common-scripts.js"></script>
@@ -480,7 +483,6 @@
     
   <script>
       //custom select box
-
       $(function(){
           $('select.styled').customSelect();
       });
